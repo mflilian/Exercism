@@ -23,6 +23,7 @@ export const translate = (RNA = '') => {
   // Usei regex para dividir cada terceira letra
   if (RNA !== '') {
     let rnaArr = RNA.match(/.{1,3}/g);
+    console.log(rnaArr)
     let transArr = []; // Vai guardar a proteina traduzida
 
     // Usei .every para interromper ao atingir um códon determinado 
